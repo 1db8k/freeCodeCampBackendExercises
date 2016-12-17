@@ -2,7 +2,11 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(__dirname + '/public/index.html')
+})
+
+app.get('/favicon', (req, res) => {
+  res.sendFile(__dirname + '/public/favicon.ico')
 })
 
 app.listen(3000, () => {
