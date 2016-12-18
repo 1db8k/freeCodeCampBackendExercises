@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
 
 app.get('/favicon', (req, res) => {
   res.sendFile(__dirname + '/public/favicon.ico')
+  res.end()
 })
 
 app.get('/:date', (req, res) => {
