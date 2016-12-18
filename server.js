@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html')
 })
 
-app.get('/favicon', (req, res) => {
+app.get('/favicon.ico', (req, res) => {
   res.sendFile(__dirname + '/public/favicon.ico')
   res.end()
 })
